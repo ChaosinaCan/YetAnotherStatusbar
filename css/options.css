@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: -o-skin('Extensions Panel Widget Skin');
+	font: 13px/26px "helvetica neue", arial, sans-serif;
+	color: #000;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#topbar {
+	position: fixed; 
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 6px;
+	
+	background-image: -o-skin('Panel Full Toolbar Skin');
+}
+
+#viewport {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 5px;
+	bottom: 0px;
+	
+	overflow: auto;
+}
+
+
+#content {
+	box-sizing: border-box;
+	max-width: 700px;
+	margin: 25px auto 15px;
+	padding: 25px 50px;
+	overflow: auto;
+	
+	background-image: -o-skin('Extensions Panel List Skin');
+}
+
+.nobar #topbar {
+	display: none;
+}
+
+.nobar #viewport {
+	top: 0;
+}
+
+
+header {
+	padding: 10px 30px 10px;
+	margin: 0 0 2em;
+	overflow: auto;
+	
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	box-shadow: 0 1px #fff;
+}
+
+header img {
+	float: left;
+}
+
+header .right {
+	float: left;
+	padding: 10px 0 10px 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header h2 {
+	margin: 0.2em 0 0;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+header .version {
+	color: rgba(0,0,0, 0.4);
+	margin-left: 0.2em;
+}
+
+footer {
+	padding: 10px 0 0;
+	margin: 25px 0 0;
+	
+	border-top: 1px solid #fff;
+	box-shadow: 0 -1px rgba(0,0,0,0.15);
+}
+
+fieldset {
+	margin-bottom: 25px;
+	padding: 5px 20px;
+	
+	border: none;
+	border-radius: 2px;
+	background: rgba(150,160,200,0.25);
+}
+
+button {
+	line-height: normal;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+fieldset label {
+	display: block;
+}
+
+.padded {
+	display: block;
+	margin-left: 44px;
+}
+
+textarea {
+	width: 100%;
+	height: 120px;
+}
+
+#credits ul {
+	display: flex;
+	flex-flow: row wrap;
+
+	margin: 0;
+	padding: 0 20px;
+	list-style: none;
+}
+
+#credits ul li {
+	flex: 1 1 50%;
+}
+
+
+dl {
+	overflow: hidden;
+}
+
+dt, dd {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+dt {
+	float: left;
+	clear: left;
+	width: 190px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+dd {
+	clear: right;
+	margin-left: 190px;
+	padding-left: 10px;
+}
+
+dl > dt:nth-of-type(even),
+dl > dt:nth-of-type(even) + dd {
+	background: rgba(150,160,200,0.25);
+}
+
+a:visited {
+	color: #00c;
+}
+
+a {
+	text-decoration: none;
+	color: #0000CC;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input[type=number] {
+	width: 60px;
+	margin-right: 10px;
+}
+
+
+fieldset {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+h3 {
+	flex: 1 1 100%;
+}
+
+p.left,
+p.demo {
+	flex: 1 0 40%;
+	margin-top: 0;
+}
+
+p.demo span {
+	display: block;
+	overflow: auto;
+
+	border: 1px solid #9FA0A2;
+	background: #fff;
+	margin-top: 4px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+operastatusbar {
+	position: relative !important;
+	display: block !important;
+	float: left;
+}

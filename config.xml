@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+		  version="1.1" 
+		  defaultlocale="en"
+		  id="extensions:ya-statusbar">
+	
+	<name>Yet Another Statusbar</name>
+	<author href="http://chaosinacan.com/">Joel Spadin</author>
+	
+	<description>Displays a popup statusbar when hovering over links</description>
+	<access origin="*" />
+	
+	<icon src="img/icon.png" />
+</widget>

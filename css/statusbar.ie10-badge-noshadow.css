@@ -1,0 +1,56 @@
+﻿html > operastatusbar { }
+
+html > operastatusbar,
+html > operastatusbar operastatusspan {
+	width: auto;
+	height: auto;
+	font: status-bar !important;
+	line-height: 1.5 !important;
+}
+
+html > operastatusbar {
+	/*all: default !important;*/
+	box-sizing: border-box !important;
+	position: fixed !important;
+	z-index: 2147483647 !important;
+	left: 5px !important;
+	bottom: 5px !important;
+
+	margin: 0 !important;
+	padding: 0 5px !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+	direction: ltr !important;
+
+	color: #555 !important;
+	background: #fff !important;
+	border: 1px solid #767676 !important;
+
+	transition: opacity 0.3s, max-width 0.3s !important;
+}
+
+html > operastatusbar .protocol {
+	display: inline-block !important;
+	margin: 0 5px 0 -5px !important;
+	padding: 0 5px !important;
+
+	border-right: 1px solid #767676 !important;
+	background: #e0e0e0 !important;
+	position: relative !important;
+}
+
+html > operastatusbar .domain {
+	display: inline !important;
+	color: #000 !important;
+}
+
+html > operastatusbar.http .protocol {
+	display: none !important;
+}
+
+html > operastatusbar.https .protocol {
+	background: #9de484 !important;
+	color: #21401b !important;
+	border-color: #7c9f6f !important;
+}

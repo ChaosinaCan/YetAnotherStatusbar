@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Statusbar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/options.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/options.js"></script>
+	<script src="js/storage.js"></script>
+	<script src="js/options_page.js"></script>
+	<script src="js/default_settings.js"></script>
+	<script>
+		OptionsPage.init(settings);
+	</script>
+</head>
+<body>
+<div id="viewport">
+	<div id="topbar"></div>
+	<div id="content">
+		<header>
+			<img src="img/icon.png" alt="Statusbar Icon">
+			<div class="right">
+				<h1><span id="widget-name">Statusbar</span> <span class="version" id="widget-version"></span></h1>
+				<h2>By <span id="widget-author">Joel Spadin</span></h2>
+			</div>
+		</header>
+
+		<fieldset>
+			<h3>Statusbar Theme</h3>
+			<p class="left">
+				<label><input type="radio" name="style" value="chrome"> Chrome</label>
+				<label><input type="radio" name="style" value="chrome-https"> Chrome (color on https)</label>
+				<label><input type="radio" name="style" value="chrome-badge"> Chrome (protocol badge)</label>
+				<label><input type="radio" name="style" value="chrome-badge-http"> Chrome (protocol badge + http)</label>
+				<label><input type="radio" name="style" value="firefox"> Firefox</label>
+				<label><input type="radio" name="style" value="firefox-badge"> Firefox (protocol badge)</label>
+				<label><input type="radio" name="style" value="firefox-badge-http"> Firefox (protocol badge + http)</label>
+				<label><input type="radio" name="style" value="ie10"> IE 10</label>
+				<label><input type="radio" name="style" value="ie10-badge"> IE 10 (protocol badge)</label>
+				<label><input type="radio" name="style" value="ie10-badge-http"> IE 10 (protocol badge + http)</label>
+				<label><input type="radio" name="style" value="ie10-noshadow"> IE 10 (no drop shadow)</label>
+				<label><input type="radio" name="style" value="ie10-badge-noshadow"> IE 10 (badge, no shadow)</label>
+				<label><input type="radio" name="style" value="ie10-badge-http-noshadow"> IE 10 (badge + http, no shadow)</label>
+			</p>
+
+			<p class="demo">
+				<span>
+					<operastatusbar class="http"><operastatusspan class="protocol">http</operastatusspan>images.<operastatusspan class="domain">google.com</operastatusspan>/images?q=cats</operastatusbar>
+				</span>
+				<span>
+					<operastatusbar class="https"><operastatusspan class="protocol">https</operastatusspan>images.<operastatusspan class="domain">google.com</operastatusspan>/images?q=cats</operastatusbar>
+				</span>
+				<span>
+					<operastatusbar class="ftp"><operastatusspan class="protocol">ftp</operastatusspan>ftp.<operastatusspan class="domain">opera.com</operastatusspan>/pub/opera/</operastatusbar>
+				</span>
+				<span>
+					<operastatusbar class="javascript"><operastatusspan class="protocol">javascript</operastatusspan>void(0)</operastatusbar>
+				</span>
+				<span>
+					<operastatusbar class="mailto"><operastatusspan class="protocol">mailto</operastatusspan>someone@example.com</operastatusbar>
+				</span>
+				<span>
+					<operastatusbar class="opera"><operastatusspan class="protocol">opera</operastatusspan>about</operastatusbar>
+				</span>
+			</p>
+
+			<p>
+				<label><input type="number" name="expand" min="0" step="100"> Delay before expanding the statusbar (milliseconds)</label>
+			</p>
+		</fieldset>
+		
+		<section id="debug" style="display: none">
+			<h3>widget.preferences</h3>
+			<div id="storage_list"></div>
+		</section>
+
+		<footer id="credits">
+			<ul>
+				<li>This thing is &copy; 2013 <a href="http://chaosinacan.com">Joel Spadin</a></li>
+				<li>
+					Based on <a href="https://addons.opera.com/extensions/details/popup-statusbar/">Popup Statusbar</a>
+					by <a href="http://myopera.com/hzr/">David Håsäther</a> and <a href="http://myopera.com/Helmers/">Jan Henrik Helmers</a>
+				</li>
+			</ul>
+		</footer>
+	</div><!-- #content -->
+</div><!-- #viewport -->
+
+</body>
+</html>
